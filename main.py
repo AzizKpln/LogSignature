@@ -2,9 +2,6 @@
 Developed By Aziz Kaplan
 aziz.kaplan@infinitumit.com.tr
 """
-from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives.asymmetric import rsa, padding
-from cryptography.hazmat.primitives import serialization
 import time,subprocess,os
 from colors import *
 
