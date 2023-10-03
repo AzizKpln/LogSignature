@@ -25,6 +25,7 @@ sign_log_file() {
   if [ $? -eq 0 ]; then
     xxd -p -c 256 "$signature_file" > "$hex_signature_file"
     cp $hex_signature_file $daily_directory
+    cp $log_file $daily_directory
     filename=$(basename "$log_file")
     echo "[+]Signature Signed Successfully: $daily_directory/$filename.imza"
     rm $signature_file
